@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title></title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<!-- 금요일까지 포트폴리오에 넣을 자료들 수집해서 짜깁기 -->
+<!-- 스와이퍼 쓰고, 헤더 고치고(스르륵 나오게 해야함 숨겨져있던게 나오는게 아니라), 나머지 완성해서 월요일까지 다시 제출-->
+<style>
+	.swiper {
+		width: 100%;
+		height: 100%;
+	}
+
+	.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #444;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.swiper-slide img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+</style>
+
+<body>
+	<header class="header">
+		<div class="header_inner">
+			<div class="logo">
+				<a href="#">
+					<img src="./img/m_logo.png" alt="" class="first_img">
+				</a>
+			</div>
+			<ul class="gnb_menu">
+				<li class="gnb_item">
+					<a href="#">이용안내</a>
+					<ul class="sub_menu">
+						<li><a href="#">박물관 소개</a></li>
+						<li><a href="#">관람안내</a></li>
+						<li><a href="#">대관안내</a></li>
+						<li><a href="#">오시는 길</a></li>
+						<li><a href="#">부대시설</a></li>
+					</ul>
+				</li>
+				<li class="gnb_item">
+					<a href="#">전시</a>
+					<ul class="sub_menu">
+						<li><a href="#">상설전시</a></li>
+						<li><a href="#">특별전시</a></li>
+					</ul>
+				</li>
+				<li class="gnb_item">
+					<a href="#">교육프로그램</a>
+					<ul class="sub_menu">
+						<li><a href="#">역사교육</a></li>
+						<li><a href="#">전통공예체험</a></li>
+					</ul>
+				</li>
+				<li class="gnb_item">
+					<a href="#">소통·소식</a>
+					<ul class="sub_menu">
+						<li><a href="#">새소식</a></li>
+						<li><a href="#">교육후기</a></li>
+						<li><a href="#">포토갤러리</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">이용문의</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div class="swiper mySwiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide"><img src="./img/201902220555000140.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="./img/202005111050316900.jpg" alt=""></div>
+			<div class="swiper-slide"><img src="./img/202005130508091810.jpg" alt=""></div>
+		</div>
+		<div class="swiper-button-next"></div>
+		<div class="swiper-button-prev"></div>
+		<div class="swiper-pagination"></div>
+	</div>
+	<main>
+		<section class="office">
+			<article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<h2>
+					시대별 문화를 즐길 수 있는 전시
+				</h2>
+				<p>
+					현재 진행 중인 전시를 알아보세요.
+				</p>
+			</article>
+			<article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<img src="./img/mainCon1_img1.jpg" alt="">
+			</article>
+			<article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<img src="./img/mainCon1_img2.jpg" alt="">
+			</article>
+		</section>
+		<section class="introduce">
+			<a href="#">
+				<article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+					<img src="./img/introCon_img1.jpg" alt="" class="introduceImg">
+					<p class="overlay_2"><img src="./img/m_logo.png" alt=""><br>박물관 소개
+						<br><span>자세히보기</span>
+					</p>
+				</article>
+			</a>
+			<article data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+				<h2>민속박물관의 즐겁고 다양한 프로그램</h2>
+				<p>다양한 프로그램을 확인해보세요.</p>
+			</article>
+		</section>
+		<section>
+			<div class="swiper mySwiper2">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./img/mainCon2_img2.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/mainCon1_img1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/mainCon2_img1.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/mainCon2_img3_m.jpg" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./img/mainCon1_img2.jpg" alt="">
+					</div>
+				</div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<section class="lastSection">
+			<h2>민속박물관 소식을 한눈에!</h2>
+			<p>오늘의 민속박물관 소식을 만나보세요.</p>
+			<div class="lastSection_article">
+				<a href=""><article>이용문의<br><img src="./img/mainCon3_util1_img1.png" alt=""></article></a>
+				<a href=""><article>오시는 길<br><img src="./img/mainCon3_util1_img2.png" alt=""></article></a>
+				<a href=""><article>포토갤러리<br><img src="./img/introCon2_icon1.png" alt=""></article></a>
+				<a href=""><article style="background-color: #1C7C57; color: #FFFFFF; padding: 50px 80px 50px 80px;">FAQ<br><img src="./img/qna_txt_ico.png" alt=""></article></a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="top">
+					<div class="links">
+						<a href="#">롯데월드 소개</a>
+						<a href="#">제휴·입점·사업문의</a>
+						<a href="#">이용약관</a>
+						<a href="#" class="cRed">개인정보처리방침</a>
+						<a href="#">사이트맵</a>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="left">
+						<div>
+							<p>
+								<span>서울특별시 송파구 올림픽로 240 호텔롯데 롯데월드</span>
+								<span>대표자 : 권오상</span>
+							</p>
+							<p>
+								<span>사업자등록번호 : 219-85-00014</span>
+								<span>통신판매업신고번호 : 송파 제5513호</span>
+								<span>대표번호
+									1661-2000</span>
+							</p>
+							<p class="copyright">COPYRIGHT 2018 LOTTEWORLD. ALL RIGHTS RESERVED.</p>
+						</div>
+					</div>
+	</footer>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+		AOS.init();
+	</script>
+	<script src="./js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev",
+			},
+		});
+		var swiper2 = new Swiper(".mySwiper2", {
+			slidesPerView: 3,
+			spaceBetween: 30,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+		});
+	</script>
+</body>
+
+</html>
